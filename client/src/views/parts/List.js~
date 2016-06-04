@@ -1,0 +1,35 @@
+import React from 'react';
+
+export default class List extends React.Component {
+	
+	constructor(props) {
+    		super(props);
+    		this.state = {
+      			//itemList: []
+    		};
+		this.addMemberRow = this.addMemberRow.bind(this);
+	}	
+
+
+	addMemberRow(item, i) {
+		return(
+			<tr key={i}><td> Bhavya </td></tr>
+		);
+	}
+
+	render(){
+		//itemList.push("Bhavya");
+	    return(
+		
+		<div>
+			<table className="table table-striped">
+				<tbody>
+					
+					{this.state.itemList.map(this.addMemberRow)} {/*//returns an array of table row jsx elements*/}
+				</tbody>
+			</table>
+		</div>
+	    );	
+
+	}
+}

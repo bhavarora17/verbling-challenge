@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prestart": "webpack",
     "start": "node index.js"
   },
   "author": "Verbling",

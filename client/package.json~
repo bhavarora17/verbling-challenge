@@ -4,15 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prestart": "webstack",
     "build": "webpack",
     "watch": "webpack --watch"
   },
   "license": "MIT",
   "dependencies": {
-    "font-awesome": "^4.6.3",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
-    "react-scrollbar": "^0.4.1",
     "webpack": "^1.13.1"
   },
   "devDependencies": {
